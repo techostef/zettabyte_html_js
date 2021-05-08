@@ -1,0 +1,169 @@
+html, body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(230, 228, 228);
+    font-family: Comic Sans MS;
+}
+
+.component-container {
+    width: 700px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 10px;
+    box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.28);
+    -webkit-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.28);
+    -moz-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.28);
+    margin-bottom: 30px;
+}
+
+.post-container {
+    width: initial;
+    background-color: white;
+    padding: 15px;
+}
+
+.user {
+    background: white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 7px;
+    display: flex;
+    padding-left: 0;
+    width: 100%;
+
+}
+.user .ellipsis {
+    margin-left: auto;
+    margin-top: 10px;
+    color: rgb(112, 112, 112);
+}
+.user .photo {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.user .photo img {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.user .detail .name {
+    font-weight: bold;
+    color: rgb(112, 112, 112);
+    display: flex;
+}
+.user .detail .name .active {
+    color: rgb(56, 177, 224);
+    margin-right: 5px;
+}
+.user .detail .time {
+    font-weight: 100;
+    color: rgb(99, 98, 98);
+    font-size: 12px;
+}
+.about-posted {
+    color: gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.infos {
+    display: flex;
+    margin-top: 10px;
+    color: rgb(107, 107, 107);
+    font-size: 14px;
+}
+
+.infos .info {
+    display: flex;
+    margin-right: 20px;
+}
+
+.infos .info i {
+    margin-top: 3px;
+    margin-right: 10px;
+    height: fit-content;
+}
+
+.infos .info i.active {
+    color: rgb(58, 58, 58);
+}
+
+.comment-container {
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
+    font-family: sans-serif;
+}
+
+.comment-container .comments-total {
+    color: rgb(104, 104, 104);
+    margin-bottom: 10px;
+}
+
+.comment-container .user {
+    background-color: transparent;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.comment-container .user .name .active {
+    color: rgb(104, 104, 104);
+}
+
+.comment-container .user .time {
+    height: fit-content;
+    margin-top: 4px;
+}
+
+.comment-container .user .comment {
+    color: rgb(109, 109, 109);
+}
+
+.comment-container .user .comment-field {
+    width: 100%;
+}
+.comment-container .user .comment-field textarea {
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 3px;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+}
+.comment-container .user .post-comment {
+    background-color: rgb(4, 141, 204);
+    color: white;
+    padding: 10px;
+    border: unset;
+    border-radius: 4px;
+    width: 120px;
+    margin-top: 20px;
+}
+
+.actions {
+    display: flex;
+    padding: 10px;
+    padding-left: 0;
+    font-size: 14px;
+}
+
+.actions .replay {
+    color: rgb(0, 204, 255);
+    margin-right: 20px;
+}

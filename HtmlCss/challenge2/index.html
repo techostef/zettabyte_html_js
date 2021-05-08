@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/722256d202.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="content">
+                <div class="title">
+                    Simple Pricing!
+                </div>
+                <div class="info">
+                    <div>
+                        The most advanced customer support tools with a simple and affordable pricing. And you can always try for 30 days. 
+                    </div>
+                    <div>free!</div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="container-prices">
+                <div class="price-item">
+                    <div class="category">
+                        <div class="text">
+                            BASIC
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="info-price">
+                            <div class="dollar">$</div>
+                            <div class="number">4</div>
+                            <div class="time">/ month</div>
+                        </div>
+                        <div class="seperator"></div>
+                        <div class="benefits">
+                            <div class="benefit">
+                                <div class="num">
+                                    10
+                                </div>
+                                Projects
+                            </div>
+                            <div class="benefit">
+                                <div class="num">
+                                    10
+                                </div>
+                                Pages
+                            </div>
+                            <div class="benefit">
+                                <div class="num">
+                                    100
+                                </div>
+                                Mb Disk Space
+                            </div>
+                        </div>
+
+                        <button class="buy-now">
+                            BUY NOW
+                        </button>
+                    </div>
+                </div>
+
+                <div class="price-item">
+                    <div class="category">
+                        <div class="text">
+                            STANDARD
+                        </div>
+                        <div class="discount">
+                            Save 15%
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="info-price">
+                            <div class="dollar">$</div>
+                            <div class="number">8</div>
+                            <div class="time">/ month</div>
+                        </div>
+                        <div class="seperator"></div>
+                        <div class="benefits">
+                            <div class="benefit">
+                                <div class="num">
+                                    20
+                                </div>
+                                Projects
+                            </div>
+                            <div class="benefit">
+                                <div class="num">
+                                    20
+                                </div>
+                                Pages
+                            </div>
+                            <div class="benefit">
+                                <div class="num">
+                                    200
+                                </div>
+                                Mb Disk Space
+                            </div>
+                        </div>
+
+                        <button class="buy-now">
+                            BUY NOW
+                        </button>
+                    </div>
+                </div>
+
+                <div class="price-item">
+                    <div class="category">
+                        <div class="text">
+                            ADVANCED
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="info-price">
+                            <div class="dollar">$</div>
+                            <div class="number">12</div>
+                            <div class="time">/ month</div>
+                        </div>
+                        <div class="seperator"></div>
+                        <div class="benefits">
+                            <div class="benefit">
+                                <div class="num">
+                                    40
+                                </div>
+                                Projects
+                            </div>
+                            <div class="benefit">
+                                <div class="num">
+                                    40
+                                </div>
+                                Pages
+                            </div>
+                            <div class="benefit">
+                                <div class="num">
+                                    500
+                                </div>
+                                Mb Disk Space
+                            </div>
+                        </div>
+
+                        <button class="buy-now">
+                            BUY NOW
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="freq-ask-questions">
+                Frequenstly Asked Questions
+            </div>
+            <div class="questions">
+                <div class="question">
+                    <div class="title">
+                        How does free trial work
+                    </div>
+                    <div class="content">
+                        is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="title">
+                        Can i Cancel any time?
+                    </div>
+                    <div class="content">
+                        is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        const buyNow = document.getElementsByClassName('buy-now')
+        for(let i = 0; i < buyNow.length; i++) {
+            buyNow[i].addEventListener('click', () => {
+                alert('Success');
+            });
+        }
+        const activeSelected = (element, idx) => {
+            const priceItems = document.getElementsByClassName('price-item')
+            for(let i = 0; i < buyNow.length; i++) {
+                priceItems[i].classList.remove("active");
+            }
+            priceItems[idx].classList.add("active");
+        }
+        const priceItems = document.getElementsByClassName('price-item')
+        for(let i = 0; i < buyNow.length; i++) {
+            priceItems[i].addEventListener('click', (e) => {
+                activeSelected(e, i)
+            });
+        }
+    </script>
+</html>

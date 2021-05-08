@@ -1,0 +1,150 @@
+html, body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(230, 228, 228);
+}
+
+.container-item {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.container-item .item {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 300px;
+    border: 1px solid rgb(230, 228, 228);
+    border-radius: 4px !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-item .item > .photo {
+    max-height: 200px;
+    height: 200px;
+}
+
+.container-item .item .user {
+    background: white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 7px;
+    display: flex;
+}
+
+.container-item .item .user .photo {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.container-item .item .user .detail .name {
+    font-weight: bold;
+    color: rgb(63, 63, 63);
+}
+
+.container-item .item .user .detail .time {
+    font-weight: 100;
+    color: rgb(99, 98, 98);
+    font-size: 12px;
+}
+
+.container-item .item > .user .photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.container-item .item > .photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-item .item .info {
+    background-color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.container-item .item .info .title {
+    font-size: 20px;
+}
+
+.container-item .item .info .location {
+    font-size: 12px;
+    color: rgb(99, 97, 97);
+    margin-bottom: 10px;
+}
+
+.container-item .item .info .description {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.container-item .item .info .footer {
+    display: flex;
+}
+
+.container-item .item .info .footer .action {
+    color: rgb(9, 161, 231);
+    font-weight: 800px;
+    margin-right: 10px;
+}
+
+.container-item .item .info .footer .icon {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+
+.description {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+/* The actual popup */
+.description .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+  
+/* Popup arrow */
+.description .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}

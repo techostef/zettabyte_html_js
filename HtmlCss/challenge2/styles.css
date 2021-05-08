@@ -1,0 +1,192 @@
+html, body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(230, 228, 228);
+}
+
+.header {
+    background: rgb(31 31 65);
+    margin: auto;
+}
+
+.header .content {
+    margin: auto;
+    width: 350px;
+    padding-top: 50px;
+    height: 50%;
+}
+
+.header .content .title {
+    font-size: 46px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+
+.header .content .info {
+    font-size: 14px;
+    color: rgb(211, 211, 211);
+    text-align: center;
+}
+
+.body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-prices {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -140px;
+    width: fit-content;
+    display: flex;
+}
+
+.container-prices .price-item {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container-prices .price-item.active {
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.43);
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.43);
+}
+
+.container-prices .price-item:hover {
+    transform: scale(1.1);
+}
+
+.container-prices .price-item .category {
+    font-family: sans-serif;
+    padding: 10px; 
+    display: flex;
+    background-color: #575757;
+    width: initial;
+    color: white;
+}
+
+.container-prices .price-item .category .discount {
+    font-size: 12px;
+    line-height: 18px;
+    margin-left: auto;
+}
+
+.container-prices .price-item .content {
+    background-color: white;
+    width: initial;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-prices .price-item .content .seperator {
+    border-bottom: 1px solid #ded7d7;
+}
+
+.container-prices .price-item .content .info-price {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.container-prices .price-item .content .info-price .dollar {
+    height: fit-content;
+    margin-bottom: auto;
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 25px;
+    color: gray;
+}
+
+.container-prices .price-item .content .info-price .number {
+    font-size: 80px;
+    font-weight: 300;
+    font-family: serif;
+}
+
+.container-prices .price-item .content .info-price .time {
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: 20px;
+    color: #b4b4b4;
+}
+
+.container-prices .price-item .content .benefits {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.container-prices .price-item .content .benefits .benefit {
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    color: #7c7c7c;
+}
+
+.container-prices .price-item .content .benefits .benefit .num {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-right: 5px;
+    color: gray;
+}
+ 
+
+.container-prices .price-item .content .buy-now{
+    width: 120px;
+    padding: 10px;
+    background-color: rgb(59, 145, 216);
+    color: white;
+    border: unset;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+
+.freq-ask-questions {
+    font-family: sans-serif;
+    font-size: 24px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: grey;
+    margin-top: 80px;
+}
+
+.questions {
+    margin-top: 60px;
+    display: flex;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+
+.questions .question {
+    margin-right: 10px;
+}
+
+.questions .question .title {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(100, 100, 100);
+}
+
+.questions .question .content {
+    color: grey;
+}
